@@ -1,134 +1,99 @@
-# Kemira — Low-Cost Communications & SEO/GEO Automation Projects
+# Kemira — Low-Cost SEO, GEO & Communications Automation
 
-### Practical automation experiments using n8n, JavaScript and AI-assisted content analysis
+### Practical projects built with n8n, JavaScript and AI
 
-## About This Portfolio
+## Why I Built These Projects
 
-I built these independent projects to explore how simple, affordable automation can help communications teams manage repetitive digital tasks.
+I am a programmer interested in combining web development, AI and digital communications.
 
-My main goal was to learn by building something practical. Instead of starting with expensive software or a complex AI system, I used n8n, public webpage content, JavaScript and a language model where it was useful.
+I wanted to explore a simple question:
 
-The projects focus on three everyday challenges:
+**How can we make everyday communications and website tasks easier without relying on expensive tools?**
 
-- Reviewing website content for possible SEO and GEO improvements.
-- Making basic website checks easier to repeat.
-- Monitoring company news without manually checking the same page every day.
+I used Kemira's publicly available website as a practical example and built three small projects.
 
-These are working prototypes, not finished enterprise products. They show how relatively small workflows can support communications work while keeping the tools and processes understandable.
+My approach was to start with simple tools, test what works, fix problems and use AI only where it adds value.
 
----
-
-## 1. Kemira AI Visibility Agent
-
-**AI-assisted website content review**
-
-![Kemira AI Visibility Agent workflow](kemira_8n8.png)
-
-### Why I built it
-
-Company websites contain a lot of useful information, but reviewing content regularly takes time.
-
-I wanted to see whether a simple workflow could collect the main content of a webpage and help identify areas that might be clearer for both search engines and AI-powered search experiences.
-
-### How it works
-
-The workflow uses n8n to:
-
-1. Retrieve the public Kemira company webpage.
-2. Extract the main webpage content.
-3. Send a limited portion of that content to a language model.
-4. Generate three content improvement suggestions with supporting evidence.
-
-**Page reviewed:** https://www.kemira.com/company/
-
-The analysis was limited to the first 3,000 characters of the extracted main content.
-
-### What this could help with
-
-For a communications team, this kind of workflow could provide a quick first review before a more detailed content audit.
-
-It may help identify unclear explanations, missing context or opportunities to make important company information easier to understand.
-
-The AI output is a starting point for human review, not an automatic decision about what should be published.
-
-### What I learned
-
-I learned how to connect webpage extraction with a language model, structure an audit prompt and ask for recommendations supported by the actual source content.
-
-I also learned why AI-generated suggestions need to be checked against the original webpage.
+These are independent portfolio projects, not official Kemira systems.
 
 ---
 
-## 2. Kemira Low-Cost SEO/GEO Optimizer
+## 1. AI Visibility Agent — Reviewing Website Content
 
-**Simple, repeatable website checks**
+![Kemira AI Visibility Agent](kemira_8n8.png)
 
-![Kemira Low-Cost SEO GEO Optimizer workflow](KemiraLowCostCeoGeoOptimizer.png)
+**The idea:** Website content should be clear for people, search engines and AI-powered search tools.
 
-### Why I built it
+**What I built:**
 
-Not every website check needs an expensive SEO platform.
+I created an n8n workflow that:
 
-I wanted to experiment with a lightweight approach that could flag selected issues and give someone a practical starting point for reviewing a page.
+- Reads content from Kemira's public company webpage.
+- Extracts the main text.
+- Uses a Google language model to review the content.
+- Suggests three possible SEO/GEO content improvements based on the extracted text.
 
-### How it works
+**What I learned:**
 
-The prototype retrieves public webpage information and performs selected rule-based checks.
+AI can help with a first content review, but its suggestions still need to be checked by a person.
 
-During testing, it flagged a potential missing meta description and produced other observations for review.
+This workflow does not measure actual AI search rankings or prove that website visibility has improved.
 
-These findings were treated as possible issues, not confirmed technical defects. For example, an element missing from raw HTML does not necessarily mean it is missing from the rendered webpage.
-
-### What this could help with
-
-A small communications team could use a workflow like this as an initial checklist when reviewing or updating important website pages.
-
-It could help make routine checks more consistent and reduce the need to repeat every basic step manually.
-
-A full technical SEO audit would still require additional tools and verification.
-
-### What I learned
-
-This project helped me understand the difference between identifying a possible issue and proving that an issue exists.
-
-It also showed me that straightforward code-based checks can be useful without adding AI to every step.
+**Website tested:** https://www.kemira.com/company/
 
 ---
 
-## 3. Kemira Communications Change Monitor
+## 2. Low-Cost SEO/GEO Optimizer — Finding Things to Check
 
-**Monitoring official company news and avoiding duplicate records**
+![Kemira Low-Cost SEO GEO Optimizer](KemiraLowCostCeoGeoOptimizer.png)
 
-![Kemira Communications Change Monitor workflow](KemiraCominucation.png)
+**The idea:** Some useful website checks can be automated without buying a large SEO platform.
 
-### Why I built it
+**What I built:**
 
-Communications teams often need to keep track of new company announcements.
+I created a workflow to retrieve webpage information and check selected SEO-related elements.
 
-Checking a webpage manually every day is a small task, but it becomes repetitive. I wanted to build a workflow that remembers what it has already seen and identifies newly discovered releases.
+During testing, the workflow flagged a possible missing meta description and produced other observations for review.
 
-### How it works
+**What I learned:**
 
-The n8n workflow:
+A workflow can help find potential problems, but every finding needs verification before calling it a confirmed website issue.
 
-1. Retrieves Kemira's public news webpage.
-2. Extracts the latest displayed releases.
-3. Reads previously saved release URLs from an n8n Data Table.
-4. Compares current releases with the stored history.
-5. Identifies releases that have not been saved before.
-6. Stores their URLs, titles, dates and release types.
+For example, something missing from raw HTML may still exist on the rendered webpage.
 
-**Source:** https://www.kemira.com/news-and-stories/
+**How this could help:**
 
-**Storage:** n8n Data Tables
+It could give a communications or website team a quick checklist of things to investigate before updating a page.
 
-**Main tools:** n8n, HTTP Request, JavaScript, Split Out and Data Tables
+No changes were made to Kemira's website.
 
-### What I tested
+---
 
-The workflow successfully extracted three official releases and stored their details.
+## 3. Communications Change Monitor — Tracking Company News
 
-When I ran the workflow again, the change detector returned:
+![Kemira Communications Change Monitor](KemiraCominucation.png)
+
+**The idea:** Instead of manually checking the same news page every day, a workflow can remember which announcements it has already seen.
+
+**What I built:**
+
+Using n8n and JavaScript, I created a workflow that:
+
+1. Reads Kemira's public news webpage.
+2. Extracts the latest displayed announcements.
+3. Saves their titles, dates, categories and links in an n8n Data Table.
+4. Compares the current announcements with previously saved records.
+5. Identifies announcements that have not been stored before.
+
+**What I actually tested:**
+
+- Successfully extracted three official Kemira releases.
+- Saved all three releases with their correct information.
+- Fixed an issue with data storage.
+- Fixed incorrect field mappings that initially created empty records.
+- Ran the workflow again and confirmed that the saved releases were not reported as new.
+
+The repeat test returned:
 
 ```json
 {
@@ -139,88 +104,90 @@ When I ran the workflow again, the change detector returned:
 }
 ```
 
-This showed that the workflow recognized the previously stored releases instead of treating them as new.
+**Why this matters:**
 
-The workflow has a daily schedule configured, although unattended daily production execution has not yet been independently verified.
+This kind of workflow could help a communications team avoid repeatedly reviewing the same announcements and focus on newly discovered information.
 
-### What this could help with
+The workflow is configured for daily execution, but long-term unattended operation has not yet been verified.
 
-For a communications team, this approach could support routine monitoring of public announcements.
-
-Instead of repeatedly reviewing the same items, a team could focus on releases that have not appeared in its saved history.
-
-The same general idea could be extended to other public company pages, with suitable adjustments to extraction and error handling.
-
-### What I learned
-
-This was the most useful debugging exercise in the portfolio.
-
-My first approach to remembering previous releases was not reliable enough for the tests. I replaced it with persistent storage using n8n Data Tables.
-
-I also fixed an issue where incorrect field mappings created empty records.
-
-The final repeat-run test confirmed that the saved release URLs were being used for comparison.
+**Website monitored:** https://www.kemira.com/news-and-stories/
 
 ---
 
-## Why I Chose a Low-Cost Approach
+## Why Low Cost Matters to Me
 
-I wanted these projects to be realistic for teams that do not have a large automation budget.
+My goal is not to use AI for everything.
 
-The approach was deliberately simple:
+I prefer to start with the simplest solution that can do the job.
 
-- Use public information instead of requiring access to internal company systems.
-- Use n8n to connect the steps in one visible workflow.
-- Use JavaScript for predictable tasks such as comparison and data extraction.
-- Use AI selectively for content interpretation rather than for every operation.
-- Store results in a simple data table instead of building a separate database application.
+For these projects, I used:
 
-This does not mean the workflows are free to operate in every environment. Hosting, maintenance and AI usage can still have costs.
+- **n8n** to connect tasks and automate workflows.
+- **JavaScript** for extracting information and comparing data.
+- **n8n Data Tables** to remember previously collected information.
+- **AI** for content analysis, where language understanding is useful.
+- **Public website content** without needing access to internal systems.
 
-However, the projects demonstrate how useful automation can begin with a small set of tools and a clearly defined task.
+This approach can reduce unnecessary software complexity and AI usage.
 
-## Potential Value for Communications Teams
+It does not mean that hosting, maintenance or AI services are always free.
 
-These prototypes could be developed further to support:
-
-**Content review:** Helping teams identify pages that may need clearer explanations or further SEO/GEO review.
-
-**Consistency:** Running the same basic checks using a repeatable process.
-
-**News monitoring:** Remembering previously observed announcements and highlighting newly discovered items.
-
-**Time for higher-value work:** Reducing repetitive checking so people can spend more time on writing, reviewing and planning communications.
-
-These are potential benefits, not measured business outcomes. I have not calculated or claimed specific time savings, cost reductions, search-ranking improvements or increases in AI visibility.
+I believe useful automation should be practical, understandable and affordable to maintain.
 
 ---
 
-## Tools and Skills Practiced
+## How I Could Take These Projects Further
 
-**Tools:** n8n, JavaScript, HTTP Request, HTML extraction, Google language models and n8n Data Tables.
+These prototypes were built using public website information. With appropriate access and approval, I could also work directly on the website itself.
 
-**Skills:** Workflow design, content extraction, SEO/GEO fundamentals, prompt design, data mapping, persistent storage, debugging and evidence-based reporting.
+Because I have a programming background, I can combine automation with hands-on WordPress development.
 
-## Current Limitations
+For example, I can:
 
-These are demonstration workflows built using public information.
+- **Work inside the WordPress dashboard:** Review and update pages, posts and website content.
+- **Improve SEO settings:** Update page titles, meta descriptions and other relevant content or technical elements.
+- **Fix website bugs:** Investigate and correct problems in themes, templates or plugins.
+- **Edit website sections:** Improve layouts, content structure and selected page elements.
+- **Build custom WordPress plugins with PHP:** Develop small features or integrations when existing plugins are not the right solution.
+- **Connect AI agents and automation:** Use n8n and APIs to support content workflows, monitoring, reporting and other repetitive tasks.
 
-The AI content audit covers a limited portion of one webpage. The SEO/GEO checks do not replace a complete technical audit. The news monitor currently examines the three latest releases displayed in the selected page section.
+For me, the advantage of being a programmer is that I am not limited to producing an audit report.
 
-The workflows have not been used to make changes to Kemira's website or internal communications systems.
+I can also help investigate the technical problem, make an approved change, build a small tool or automate the process.
 
-## Next Steps
+I would still test changes carefully and work within the team's security, publishing and approval procedures.
 
-I would like to improve these projects by adding better error handling, broader page coverage, clearer reports and optional notifications for newly detected releases.
+---
 
-I would also like to test the workflows over a longer period and document how reliably they operate.
+## What These Projects Show
+
+These projects helped me practice:
+
+- Finding practical opportunities for automation.
+- Working with public website data.
+- Building workflows in n8n.
+- Using JavaScript to process and compare information.
+- Using AI for content analysis.
+- Debugging real workflow problems.
+- Testing results instead of assuming everything works.
+- Thinking about cost, maintenance and usability.
+
+I have not measured time savings, search-ranking improvements or increases in AI visibility. Those would require further testing.
+
+## Final Thought
+
+I believe the best solution is not always the most complicated or expensive one.
+
+Sometimes a small automation, a useful WordPress improvement or a custom PHP plugin can solve a practical problem.
+
+My goal is to combine **programming, SEO/GEO knowledge and AI automation** to help communications teams work more efficiently, while keeping people responsible for reviewing and approving the final results.
 
 ---
 
 ## Disclaimer
 
-These are independent learning and portfolio projects.
+These are independent portfolio projects created for learning and demonstration purposes.
 
-They are not official Kemira projects and are not affiliated with, commissioned by or endorsed by Kemira.
+They are not official Kemira projects and are not affiliated with or endorsed by Kemira.
 
-All examples use publicly accessible information. No improvements in search rankings, AI visibility or business performance are claimed.
+All testing used publicly accessible information. No changes were made to Kemira's website or internal systems.
