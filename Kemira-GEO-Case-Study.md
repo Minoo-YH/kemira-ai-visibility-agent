@@ -109,13 +109,13 @@ My experience taught me to look for practical solutions, not just write reports 
 
 ## Test Evidence
 
-The following documents contain summaries and quotations from the AI responses I examined:
+I documented my research in three files so the results can be reviewed directly on GitHub.
 
-- [Gemini Test Evidence](AI-Test-Evidence/Kemira_Gemini_Test_Evidence.docx)
-- [Claude Test Evidence](AI-Test-Evidence/Kemira_Claude_Test_Evidence.docx)
-- [ChatGPT Research Summary](AI-Test-Evidence/Kemira_ChatGPT_Research_Summary.docx)
+- **[Gemini Test Evidence](AI-Test-Evidence/Gemini-Test-Evidence.md)** — My main GEO finding: Gemini used an outdated business structure and included some claims that need verification.
+- **[Claude Test Evidence](AI-Test-Evidence/Claude-Test-Evidence.md)** — Claude correctly identified Kemira's current business units but could not verify some sustainability details.
+- **[ChatGPT Research Summary](AI-Test-Evidence/ChatGPT-Research-Summary.md)** — My initial research and preparation for comparing AI answers.
 
-The ChatGPT document represents initial research, not an independent test under identical conditions.
+These documents are research summaries with selected quotations, not complete conversation transcripts. The tests were exploratory and did not use identical prompts.
 
 ## Official Source
 
