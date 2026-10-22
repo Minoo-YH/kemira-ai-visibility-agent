@@ -2,6 +2,22 @@
 
 ### Practical projects built with n8n, JavaScript and AI
 
+## Key GEO Finding
+
+In October 2026, I tested how Claude and Gemini describe Kemira.
+
+**I found a clear mistake in Gemini's answer:** it described Kemira using an outdated two-part business structure, although Kemira introduced three business units in January 2025.
+
+I checked this against Kemira's official announcement.
+
+This project shows how I approach problems: **test, find the issue, verify it and suggest a practical solution.**
+
+I also have real WordPress and PHP experience from Coreorient, where I maintained websites, cleaned up spam and built custom solutions to avoid unnecessary plugin costs.
+
+**[Read my GEO Case Study](Kemira-GEO-Case-Study.md)**
+
+**[See AI Test Evidence](AI-Test-Evidence/)**
+
 ## Why I Built These Projects
 
 I am a programmer interested in combining web development, AI and digital communications.
