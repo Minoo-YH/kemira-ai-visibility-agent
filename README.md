@@ -191,3 +191,10 @@ These are independent portfolio projects created for learning and demonstration 
 They are not official Kemira projects and are not affiliated with or endorsed by Kemira.
 
 All testing used publicly accessible information. No changes were made to Kemira's website or internal systems.
+
+
+## GEO Research
+
+I also compared AI answers about Kemira and found an example of outdated company information.
+
+[Read my GEO Case Study](Kemira-GEO-Case-Study.md)
