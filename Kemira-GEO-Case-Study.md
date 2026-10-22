@@ -1,99 +1,121 @@
-# Kemira GEO Case Study — What I Tested and Found
+# Kemira GEO Case Study — Finding Outdated Information in AI Answers
 
 **Independent portfolio project | October 2026**
 
-## Why I Did This
+## My Main Finding
 
-I wanted to see how AI assistants describe Kemira and whether they give people correct and up-to-date information.
+I tested how AI assistants describe Kemira and compared their answers with official company information.
 
-AI tools are becoming a common way to learn about companies. I think it is important that the information they provide is accurate, especially when it comes to a company's business, sustainability work and products.
+**I found an outdated business structure in Gemini's answer.**
 
-I also wanted to understand what I could do to help improve this using my programming and WordPress experience.
+Gemini described Kemira using two business areas, including "Industry & Flow" and "Pulp & Paper".
 
-## What I Tested
-
-I used ChatGPT for my initial research and tested Claude and Gemini with questions about:
-
-- What Kemira does and which industries it serves.
-- Kemira's sustainability work and water-treatment solutions.
-- Whether the information is accurate and up to date.
-- What information is missing or unclear.
-- Which sources support the answers.
-
-I compared their answers with information from Kemira's official website.
-
-## What I Found
-
-Both Claude and Gemini explained Kemira's work in water treatment quite well.
-
-However, I found one clear mistake in Gemini's answer.
-
-**Gemini described Kemira using an old business structure.**
-
-It mentioned two main business areas, including "Industry & Flow" and "Pulp & Paper".
-
-But Kemira introduced three business units on January 1, 2025:
+However, Kemira introduced three business units on January 1, 2025:
 
 - **Water Solutions**
 - **Packaging & Hygiene Solutions**
 - **Fiber Essentials**
 
-The previous business structure was called "Industry & Water" and "Pulp & Paper".
+Claude correctly identified the three current business units.
 
-Claude used the newer structure, but it could not confirm some details about sustainability figures.
+This was a useful example of how an AI assistant can give a helpful company overview while including outdated information.
 
-Gemini also gave some performance numbers without linking each claim directly to its source.
+## Why I Did This
 
-This showed me that AI can give a helpful answer while still including outdated or incomplete information.
+I wanted to understand whether people using AI tools receive accurate and up-to-date information about Kemira.
 
-## Why This Matters
+I also wanted to explore how my WordPress, PHP and automation experience could help a Communications team identify and address these problems.
 
-Someone asking an AI assistant about Kemira might receive an old description of the company without knowing it is outdated.
+## What I Tested
 
-For a Communications team, keeping company information consistent and easy to verify is important.
+I used ChatGPT for initial research and examined answers from Claude and Gemini about:
 
-This is a GEO issue worth monitoring, even though it does not mean Kemira's website is broken.
+- Kemira's business and customers.
+- Sustainability and water-treatment solutions.
+- Information that might be outdated or difficult to verify.
+- Sources supporting the AI-generated answers.
 
-## How I Would Improve It
+I compared the findings with information from Kemira's official website.
 
-First, I would check whether Kemira's main website pages already explain the current business structure clearly.
+These were exploratory tests, not a standardized benchmark using identical prompts.
 
-If the information is already correct, I would investigate why AI assistants are still using older descriptions.
+## What I Found
 
-If any website content needs updating, I could help the team:
+### 1. Outdated company information
 
-- Update outdated information through WordPress.
-- Make important company facts easier to find and understand.
-- Add clear questions and answers where useful.
-- Improve page structure and add structured data when appropriate.
-- Check important links, dates and sources.
-- Build a simple automation to check AI answers regularly.
+Gemini used an outdated two-part description of Kemira's business.
 
-I would test any changes and get approval before publishing them.
+The previous business units were called **Industry & Water** and **Pulp & Paper**. Gemini's wording, "Industry & Flow", was not the official name of the previous unit either.
+
+This matters because someone asking AI about Kemira could receive an incorrect description of how the company operates today.
+
+### 2. Useful answers with missing details
+
+Both Claude and Gemini explained Kemira's water-treatment products and applications.
+
+Claude correctly identified the current business units but could not verify some sustainability details.
+
+Gemini included numerical performance claims without direct sources for each figure.
+
+These findings show why AI answers should be checked before they are used in company communications.
+
+### 3. Independent verification matters
+
+Claude said it had not found independent verification for Kemira's sustainability figures.
+
+Gemini later mentioned limited assurance by EY for Kemira's 2025 sustainability reporting.
+
+This is an important distinction: limited assurance of a report does not automatically mean every individual impact claim has been independently verified.
+
+I would check the original assurance statement before drawing conclusions about specific metrics.
+
+## How I Could Help Kemira
+
+I would start by checking whether Kemira's key website pages already explain the current business structure clearly.
+
+If the information is correct, I would investigate why AI assistants still use older descriptions.
+
+Where improvements are needed, I could help the team:
+
+- Update content through WordPress, if that is the platform used and access is approved.
+- Improve page structure and make important company facts easier to find.
+- Add useful FAQs and structured data where appropriate.
+- Check dates, links and supporting sources.
+- Build simple tools to monitor website changes and repeat AI tests.
+
+I would test proposed changes and work with the Communications team before publishing anything.
 
 ## My Real WordPress Experience
 
-I have practical WordPress experience from my previous work at **Coreorient**.
+At **Coreorient**, I worked on real WordPress maintenance and technical problems.
 
-I worked on website maintenance and solved everyday technical problems.
+I cleaned up large amounts of spam in the WordPress dashboard and helped with SEO-related website housekeeping.
 
-For example, I cleaned up a large amount of spam in the WordPress dashboard and helped improve website maintenance and SEO-related housekeeping.
-
-I also used **PHP to build custom WordPress solutions and plugins**, instead of buying paid plugins for every small task.
+I also built custom PHP solutions and WordPress plugins instead of purchasing paid plugins for every small task.
 
 This helped the company avoid unnecessary software costs.
 
-That experience taught me that sometimes a small technical solution can make a big difference.
+My experience taught me to look for practical solutions, not just write reports about problems.
 
-## What I Learned
+## What I Would Do in My First 30 Days
 
-My biggest takeaway is that GEO is not just about making a website more visible to AI.
+**Week 1:** Review important company pages and document how AI assistants currently describe Kemira.
 
-It is also about making sure AI assistants can find **correct, current and trustworthy information**.
+**Week 2:** Compare AI answers with official sources and identify information that is outdated or unclear.
 
-I like finding real problems, understanding why they happen and solving them with practical tools.
+**Week 3:** Suggest small content or technical improvements and, with approval, implement one useful change.
 
-That is the approach I would bring to Kemira.
+**Week 4:** Repeat the tests, document the results and share what improved or still needs attention.
+
+## Test Evidence
+
+The following documents contain summaries and quotations from the AI responses I examined:
+
+- [Gemini Test Evidence](AI-Test-Evidence/Kemira_Gemini_Test_Evidence.docx)
+- [Claude Test Evidence](AI-Test-Evidence/Kemira_Claude_Test_Evidence.docx)
+- [ChatGPT Research Summary](AI-Test-Evidence/Kemira_ChatGPT_Research_Summary.docx)
+
+The ChatGPT document represents initial research, not an independent test under identical conditions.
 
 ## Official Source
 
@@ -101,4 +123,4 @@ That is the approach I would bring to Kemira.
 
 ---
 
-*This is an independent portfolio project. I used publicly available information and AI assistant responses. I have not made changes to Kemira's website. The finding is based on the specific Gemini answer I tested, not a measurement of all Gemini responses.*
+*This is an independent portfolio project based on publicly available information and specific AI assistant responses. I have not changed Kemira's website. The observed Gemini error does not prove a technical problem on Kemira's website or guarantee that website changes would correct future AI answers.*
